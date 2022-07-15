@@ -15,16 +15,16 @@
 #									#
 #########################################################################
 
-ARQALUNOS="/home/ricardo/Cursos/ShellScript/arquivos/alunos2.txt"
+ARQALUNOS="/home/tatu/Documents/bashshell/CursoShellScript/arquivos/alunos2.txt"
 
 clear
 echo "======= Script de Busca de Alunos ========"
 echo ""
 #echo -n "Por favor, informe o nome do aluno: "
 #read ALUNO
-read -p "Por favor, informe o nome do aluno: " ALUNO
+echo ""
 
-ALUNOCOMPLETO=$(grep "$ALUNO" $ARQALUNOS)
+ALUNOCOMPLETO=$(grep "$1" $ARQALUNOS)
 
 echo ""
 echo "O nome completo do aluno é: $ALUNOCOMPLETO"
